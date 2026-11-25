@@ -1,0 +1,22 @@
+
+window.SKY_IMAGES = {
+  homeHero: "assets/images/home-banner.jpg",
+  homeCommunity:  "assets/images/home-community.jpg",
+  studio: "assets/images/premium-stay.jpg",
+  ensuite: "assets/images/standard-stay.jpg",
+  twin: "assets/images/short-term-stay.jpg",
+  aboutHero: "assets/images/abouthero.jpg",
+  aboutCommunity: "assets/images/aboutCommunity.jpg",
+  lifeinthecommunity: "assets/images/lifeinthecommunity.jpg",
+  facilitiesHero: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1800&q=85",
+  cowork: "assets/images/COWORK.jpg",
+  STUDYPODS :  "assets/images/STUDY-PODS.jpg",
+  kitchen: "assets/images/kitchen.jpg",
+  lounge: "assets/images/lounge.jpg",
+  terrace: "assets/images/terrace.jpg",
+  laundry: "assets/images/laundry.jpg",
+  security: "assets/images/security.jpg",
+  gym: "assets/images/gym.jpg",  
+  contactHero: "assets/images/contacthero.png", 
+  contact: "assets/images/contact.jpg",  
+}
