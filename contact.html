@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="SkyNest Co-Living Spaces offers furnished co-living homes in Singapore.">
+<title>Contact | SkyNest Co-Living Spaces</title><link rel="stylesheet" href="styles.css">
+<script src="images.js" defer></script><script src="script.js" defer></script></head><body>
+
+<header class="site-header">
+ <div class="container nav-wrap">
+ <a class="brand" href="index.html" aria-label="SkyNest Home">
+  <img
+    class="brand-logo"
+    src="assets/images/skynest-logo.png"
+    alt="SkyNest Co-Living Spaces"
+  >
+</a>
+  <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">Menu</button>
+  <nav class="nav-links" aria-label="Main navigation">
+   <a href="index.html" >Home</a><a href="about.html" >About Us</a><a href="accommodation.html" >Accommodation</a><a href="facilities.html" >Facilities</a><a href="contact.html" aria-current="page">Contact</a>
+  </nav>
+  <a class="nav-cta" href="contact.html">Enquire now</a>
+ </div>
+</header>
+
+<main>
+<section class="page-hero" data-image="contactHero"><div class="container"><p class="eyebrow">Start a conversation</p><h1>Let us help you find your space</h1><p>Send an enquiry and we will reply with availability and viewing options.</p></div></section>
+<section class="section"><div class="container contact-grid">
+ <div><p class="eyebrow">Get in touch</p><h2>Enquiry form</h2><p>Fields marked * are required.</p>
+ <form id="enquiry-form">
+  <div class="form-grid">
+   <div class="field"><label for="full-name">Full name *</label><input id="full-name" name="fullName" autocomplete="name" required></div>
+   <div class="field"><label for="email">Email *</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+   <div class="field"><label for="phone">Phone or WhatsApp</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
+   <div class="field"><label for="move-date">Preferred move-in date</label><input id="move-date" name="moveDate" type="date"></div>
+   <div class="field full"><label for="room-type">Room type *</label><select id="room-type" name="roomType" required><option value="">Choose one</option><option>Private studio</option><option>Ensuite room</option><option>Twin share</option><option>Not sure yet</option></select></div>
+   <div class="field full"><label for="message">Message</label><textarea id="message" name="message" placeholder="Length of stay, budget, questions..."></textarea></div>
+   <div class="field full"><label class="consent"><input type="checkbox" required><span>I agree to SkyNest contacting me about this enquiry. *</span></label></div>
+   <div class="field full"><button class="btn" type="submit">Send enquiry</button></div>
+  </div>
+  <div id="form-message" class="form-message" role="status" aria-live="polite"></div>
+ </form>
+ <p class="small-note">Demonstration only: this form validates input in the browser but does not send enquiries to a mailbox or database yet.</p>
+ </div>
+ <aside class="contact-details"><p class="eyebrow">Find us</p><h2>SkyNest, Singapore</h2><p><strong>Location</strong><br>Singapore </p><p><strong>Email</strong><br><a href="mailto:admin@skynest.com">admin@skynest.com</a></p><p><strong>Phone / WhatsApp</strong><br><a href="tel:+1234567890">+1234567890</a></p><p><strong>Viewing hours</strong><br>By appointment (confirm operating hours)</p><img class="contact-photo" data-image="contact" alt="Welcoming shared living space"></aside>
+</div></section>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+ const params = new URLSearchParams(window.location.search);
+ const room = params.get("room");
+ if (room) document.querySelector("#room-type").value = room;
+});
+</script>
+</main>
+
+<section class="cta-band"><div class="container cta-inner"><div><h2>Come and see the space</h2><p>Tell us when you are moving to Singapore and what you need.<br>We will reply with available rooms and viewing options.</p></div><div class="cta-actions"><a class="btn" href="contact.html">Enquire now</a><a class="btn btn-outline" href="accommodation.html">Compare packages</a></div></div></section>
+<footer class="site-footer"><div class="container"><div class="footer-grid">
+ <div>
+  <a class="brand" href="index.html" aria-label="SkyNest Home">
+    <img
+      class="brand-logo footer-logo"
+      src="assets/images/skynest-logo.png"
+      alt="SkyNest Co-Living Spaces"
+    >
+  </a>
+  <p>A place to live. A space to belong.</p><p>More than a room: a home base, connections and a better everyday.</p></div>
+ <div><h3>Explore</h3><div class="footer-links"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="accommodation.html">Accommodation</a><a href="facilities.html">Facilities</a><a href="contact.html">Contact</a></div></div>
+ <div><h3>Find us</h3><p>Singapore</p><p><a href="mailto:admin@skynest.com">admin@skynest.com</a></p><p><a href="tel:+1234567890">+1234567890</a></p></div>
+ </div><div class="footer-bottom">© <span data-year></span> SkyNest Co-Living Spaces. All rights reserved.</div></div></footer>
+
+</body></html>
